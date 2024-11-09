@@ -20,7 +20,7 @@ RUN npm run build
 # ENV NODE_ENV=production
 
 # Expõe a porta 3000 para acessar o app no container
-EXPOSE 3000
+EXPOSE 3001
 
 # Comando para iniciar o servidor Next.js
 CMD ["npm", "start"]
