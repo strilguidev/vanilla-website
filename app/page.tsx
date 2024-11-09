@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -33,7 +34,7 @@ export default function Home() {
             <footer className="absolute  w-full h-[267px] bg-[#0C100E] ">
                 <div className="h-[267px] flex justify-between items-center px-10">
                     <div className="flex flex-col gap-4">
-                        <img src="logo-footer.png" className="w-[200px]" alt="" />
+                        <Image src="logo-footer.png" className="w-[200px]" alt="" />
                         <div>
                             <h1 className="font-bold">Vanilla Roleplay 2021 - 2024</h1>
                             <h2 className="opacity-45">© Todos os direitos reservados</h2>
@@ -42,10 +43,19 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <div className="flex justify-end gap-4">
-                            <a href=""><img src="discord.svg" className="p-5 bg-white rounded-full" alt="" /></a>
-                            <a href=""><img src="youtube.svg" className="p-5 bg-white rounded-full" alt="" /></a>
+                            <a href="">
+                                <Image
+                                    className="p-5 bg-white rounded-full"
+                                    src="discord.svg"
+                                    alt="Next.js logo"
+                                    width={180}
+                                    height={38}
+                                    priority
+                                />
+                                <Image src="discord.svg" className="p-5 bg-white rounded-full" alt="" />
+                            </a>
+                            <a href=""><Image src="youtube.svg" className="p-5 bg-white rounded-full" alt="" /></a>
                         </div>
-                        <h1>Desenvolvido com carinho por <strong className="text-[#1DF573]">imSand</strong>.</h1>
                     </div>
                 </div>
             </footer>
